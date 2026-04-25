@@ -1,465 +1,538 @@
 <!DOCTYPE html>
-<html lang="vi" dir="ltr">
+<html lang="vi" prefix="og: https://ogp.me/ns#">
 <head>
+<!-- ═══════════════════════════════════════
+  PERFORMANCE: charset + viewport FIRST
+═══════════════════════════════════════ -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- SEO Core -->
-<title>Chanh · chanhdotme — Chanh.me</title>
-<meta name="description" content="Chanh (chanhdotme) — Vi vu. Liên hệ, theo dõi và kết nối tại Chanh.me.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══════════════════════════════════════
+  SEO – PRIMARY META
+═══════════════════════════════════════ -->
+<title>Chanh | chanh.me</title>
+<meta name="description" content="Trang namecard cá nhân của Chanh – liên hệ qua email, điện thoại hoặc mạng xã hội.">
+<meta name="keywords" content="Chanh, chanh.me, namecard, liên hệ">
 <meta name="author" content="Chanh">
-<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
-<link rel="canonical" href="https://chanh.me/">
-<!-- Open Graph -->
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="googlebot" content="index, follow">
+<link rel="canonical" href="https://chanh.me">
+
+<!-- ═══════════════════════════════════════
+  SEO – OPEN GRAPH (Facebook / Zalo)
+═══════════════════════════════════════ -->
 <meta property="og:type" content="profile">
-<meta property="og:url" content="https://chanh.me/">
-<meta property="og:title" content="Chanh · chanhdotme — Chanh.me">
-<meta property="og:description" content="Vi vu.">
+<meta property="og:title" content="Chanh | chanh.me">
+<meta property="og:description" content="Trang namecard cá nhân của Chanh – liên hệ qua email, điện thoại hoặc mạng xã hội.">
+<meta property="og:url" content="https://chanh.me">
+<meta property="og:site_name" content="Chanh">
+<meta property="og:locale" content="vi_VN">
 <meta property="og:image" content="https://chanh.me/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Chanh – Chanh.me">
-<meta property="og:locale" content="vi_VN">
-<meta property="og:site_name" content="Chanh.me">
+<meta property="og:image:alt" content="Chanh">
 <meta property="profile:first_name" content="Chanh">
-<!-- Twitter Card -->
+<meta property="profile:last_name" content="Chanh">
+
+<!-- ═══════════════════════════════════════
+  SEO – TWITTER / X CARD
+═══════════════════════════════════════ -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@chanhdotme">
-<meta name="twitter:creator" content="@chanhdotme">
-<meta name="twitter:title" content="Chanh · chanhdotme — Chanh.me">
-<meta name="twitter:description" content="Vi vu.">
+<meta name="twitter:title" content="Chanh | chanh.me">
+<meta name="twitter:description" content="Trang namecard cá nhân của Chanh – liên hệ qua email, điện thoại hoặc mạng xã hội.">
 <meta name="twitter:image" content="https://chanh.me/og-image.jpg">
-<!-- PWA / Mobile -->
-<meta name="theme-color" content="#3db8f5">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Chanh.me">
-<link rel="apple-touch-icon" href="https://chanh.me/apple-touch-icon.png">
-<link rel="icon" type="image/svg+xml" href="./Chanh.png">
-<link rel="icon" type="image/png" href="./Chanh.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<meta name="twitter:site" content="@chanhdotme">
+
+<!-- ═══════════════════════════════════════
+  SEO – STRUCTURED DATA JSON-LD
+  Google dùng để hiện rich result / Knowledge Panel
+═══════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Chanh",
+  "givenName": "Chanh",
+  "familyName": "Chanh",
+  "jobTitle": "Freelancer",
+  "url": "https://chanh.me",
+  "email": "hello@chanh.me",
+  "telephone": "+84937xxxx28",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "TP. Hồ Chí Minh",
+    "addressCountry": "VN"
+  },
+  "sameAs": [
+    "https://facebook.com/chanhdotme",
+    "https://t.me/chanhdotme",
+    "https://youtube.com/@chanhdotme",
+    "https://tiktok.com/@chanhdotme",
+    "https://www.strava.com/athletes/chanhdotme",
+    "https://x.com/chanhdotme",
+    "https://instagram.com/chanhdotme",
+    "https://zalo.me/chanhdotme",
+    "https://wa.me/chanhdotme"
+  ],
+  "knowsAbout": ["Chanh"],
+  "image": "https://chanh.me/og-image.jpg",
+  "description": "Trang namecard cá nhân của Chanh."
+}
+</script>
+
+<!-- Performance + UX hints -->
+<meta name="theme-color" content="#07111f">
+<meta name="color-scheme" content="dark">
+<meta name="format-detection" content="telephone=no">
+
+<!-- Favicon inline SVG — 0 network request -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2307111f'/><text x='16' y='22' font-family='system-ui' font-weight='800' font-size='14' fill='%231aa6f6' text-anchor='middle'>C</text></svg>">
+
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+/* ═══════════════════════════════════════
+   SYSTEM FONT STACK — không load Google Fonts
+   Apple  → -apple-system / SF Pro
+   Chrome → BlinkMacSystemFont
+   Win    → Segoe UI
+   Android→ Roboto
+   Nền    → Helvetica Neue → Arial
+   Render ngay lập tức, không FOUT
+═══════════════════════════════════════ */
+:root {
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+          "Apple Color Emoji", "Segoe UI Emoji";
 
-:root{
-  --bg:#f0f7ff;
-  --card:#ffffff;
-  --sf2:#eaf5fe;
-  --bd:#cde8f8;
-  --bdh:#3db8f5;
-  --tx:#0d1a27;
-  --tx2:#3a5568;
-  --mu:#8aadca;
-  --ac:#3db8f5;
-  --ac2:#1a9fd8;
-  --ac-soft:rgba(61,184,245,.1);
-  --ac-glow:rgba(61,184,245,.22);
-  --gr:#16c07a;
-  --r:14px;
-  --rs:10px;
-  --f:'DM Sans',system-ui,-apple-system,sans-serif;
-  --fd:'DM Serif Display',Georgia,serif;
-  --t:.2s;
-  --shadow-sm:0 1px 3px rgba(0,0,0,.05),0 1px 8px rgba(61,184,245,.07);
-  --shadow-md:0 4px 16px rgba(61,184,245,.13),0 2px 6px rgba(0,0,0,.05);
-  --shadow-lg:0 8px 40px rgba(61,184,245,.16),0 2px 12px rgba(0,0,0,.07);
-  --shadow-card:0 20px 60px rgba(61,184,245,.12),0 4px 20px rgba(0,0,0,.08);
+  --primary:#1aa6f6;
+  --primary-light:#4dbef8;
+  --primary-dark:#0e8fd6;
+  --bg:#07111f;
+  --bg2:#0d1d30;
+  --bg3:#122336;
+  --text:#e8f4fd;
+  --muted:#7ba8c4;
+  --border:rgba(26,166,246,.15);
+  --card-bg:rgba(13,29,48,.88);
+  --radius-card:clamp(20px,4vw,28px);
 }
 
-@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;animation-iteration-count:1!important}}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+img,svg{display:block;max-width:100%}
+button{font:inherit;cursor:pointer;border:none;background:none}
+a{color:inherit;text-decoration:none}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
-
-body{
-  font-family:var(--f);
-  background:var(--bg);
-  color:var(--tx);
+body {
   min-height:100svh;
+  background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font);
+  padding:clamp(16px,4vw,32px);
   overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background-image:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(61,184,245,.12) 0%, transparent 60%),
-    radial-gradient(circle at 1px 1px, rgba(61,184,245,.15) 1px, transparent 0);
-  background-size:100% 100%, 24px 24px;
-}
-
-/* Main card */
-.wrap{
-  position:relative;
-  z-index:1;
-  width:min(460px,100%);
-  padding:clamp(24px,5vw,44px) clamp(18px,5vw,36px) clamp(28px,5vw,44px);
-  background:var(--card);
-  border-radius:24px;
-  border:1px solid var(--bd);
-
-  box-shadow:var(--shadow-card);
-  margin:clamp(16px,4vw,40px) clamp(12px,4vw,20px);
-  animation:fadeUp .5s cubic-bezier(.22,1,.36,1) both;
-}
-
-/* Top colour bar */
-.wrap::before{
-  content:'';
-  position:absolute;
-  top:0; left:28px; right:28px;
-  height:3px;
-  background:linear-gradient(90deg, var(--ac2), var(--ac), #7dd8f8, var(--ac));
-  background-size:200% 100%;
-  border-radius:0 0 3px 3px;
-  animation:shimBar 4s linear infinite;
-}
-
-@keyframes shimBar{0%{background-position:0% 0}100%{background-position:200% 0}}
-
-.skip{position:absolute;top:-100%;left:16px;padding:8px 16px;border-radius:0 0 8px 8px;background:var(--ac);color:#fff;font-size:.85rem;font-weight:700;text-decoration:none;z-index:9999;transition:top .2s}
-.skip:focus{top:0}
-
-/* HEADER */
-.hdr{
-  display:flex;
-  align-items:center;
-  gap:16px;
-  margin-bottom:clamp(16px,4vw,26px);
-  animation:fadeUp .45s .06s cubic-bezier(.22,1,.36,1) both;
-}
-
-.avatar{
-  width:72px; height:72px;
-  border-radius:50%;
-  flex-shrink:0;
-  background:linear-gradient(145deg,#e0f4fe,#b8e6fb);
-  display:grid;
-  place-items:center;
-  font-size:28px;
-  border:2px solid rgba(61,184,245,.3);
-  box-shadow:0 0 0 5px rgba(61,184,245,.08), 0 4px 12px rgba(61,184,245,.15);
   contain:layout style;
-  line-height:1;
 }
 
-.hdr-info h1{
-  font-family:var(--fd);
-  font-size:clamp(1.35rem,5vw,1.7rem);
-  font-weight:400;
-  letter-spacing:-.01em;
-  line-height:1.15;
-  color:var(--tx);
+/* Background — GPU compositor layer */
+body::before {
+  content:'';position:fixed;inset:0;
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 20%,rgba(26,166,246,.12) 0%,transparent 60%),
+    radial-gradient(ellipse 50% 60% at 80% 80%,rgba(14,143,214,.10) 0%,transparent 60%),
+    radial-gradient(ellipse 40% 40% at 60% 10%,rgba(77,190,248,.07) 0%,transparent 50%);
+  z-index:0;
+  animation:bgShift 8s ease-in-out infinite alternate;
+  transform:translateZ(0);
+}
+@keyframes bgShift{from{opacity:.8}to{opacity:1}}
+
+body::after {
+  content:'';position:fixed;inset:0;
+  background-image:
+    linear-gradient(rgba(26,166,246,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(26,166,246,.04) 1px,transparent 1px);
+  background-size:50px 50px;
+  z-index:0;transform:translateZ(0);
 }
 
-.name-lnk{
-  color:inherit;
-  text-decoration:none;
-  transition:color var(--t);
+/* ── Card ── */
+.card {
+  position:relative;z-index:1;
+  width:100%;max-width:480px;
+  background:var(--card-bg);
+  border:1px solid var(--border);
+  border-radius:var(--radius-card);
+  padding:clamp(24px,6vw,48px) clamp(20px,5vw,40px) clamp(24px,5vw,40px);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  box-shadow:
+    0 0 0 1px rgba(26,166,246,.08),
+    0 30px 80px rgba(0,0,0,.5),
+    0 0 60px rgba(26,166,246,.06),
+    inset 0 1px 0 rgba(255,255,255,.05);
+  isolation:isolate;
+  animation:cardIn .7s cubic-bezier(.16,1,.3,1) both;
 }
-.name-lnk:is(:hover,:focus-visible){color:var(--ac2);outline:none}
+@keyframes cardIn{
+  from{opacity:0;transform:translateY(24px) scale(.97)}
+  to{opacity:1;transform:none}
+}
 
-.badge{
-  display:inline-flex;
-  align-items:center;
-  gap:5px;
-  font-size:.71rem;
-  color:var(--gr);
-  font-weight:600;
+.card::before {
+  content:'';position:absolute;top:0;left:50%;
+  transform:translateX(-50%);
+  width:120px;height:2px;
+  background:linear-gradient(90deg,transparent,var(--primary),transparent);
+  border-radius:2px;
+}
+
+.corner-mark,.corner-mark-bl{position:absolute;width:8px;height:8px;opacity:.5}
+.corner-mark{top:16px;right:16px;border-top:1.5px solid var(--primary);border-right:1.5px solid var(--primary)}
+.corner-mark-bl{bottom:16px;left:16px;border-bottom:1.5px solid var(--primary);border-left:1.5px solid var(--primary)}
+
+/* ── Avatar ── */
+.avatar-wrap{
+  display:flex;align-items:center;
+  gap:clamp(14px,4vw,24px);
+  margin-bottom:clamp(20px,5vw,28px);
+}
+
+.avatar-ring{position:relative;flex-shrink:0}
+
+.avatar-ring::before {
+  content:'';position:absolute;inset:-3px;border-radius:50%;
+  background:conic-gradient(var(--primary),var(--primary-light),transparent 60%,var(--primary));
+  animation:spin 4s linear infinite;z-index:0;
+  transform:translateZ(0);will-change:transform;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.avatar {
+  position:relative;z-index:1;
+  width:clamp(72px,18vw,90px);height:clamp(72px,18vw,90px);
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--bg2),var(--bg3));
+  border:3px solid var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--font);font-weight:800;
+  font-size:clamp(20px,5vw,28px);
+  color:var(--primary);letter-spacing:-1px;overflow:hidden;
+}
+
+.avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+
+.status-dot {
+  position:absolute;bottom:4px;right:4px;
+  width:13px;height:13px;
+  background:#22d15b;border-radius:50%;
+  border:2px solid var(--bg);z-index:2;
+  animation:pulse 2s ease-in-out infinite;
+  transform:translateZ(0);
+}
+@keyframes pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(34,209,91,.4)}
+  50%{box-shadow:0 0 0 5px rgba(34,209,91,0)}
+}
+
+.header-text{flex:1;min-width:0}
+
+.badge {
+  display:inline-flex;align-items:center;gap:5px;
+  background:rgba(26,166,246,.1);border:1px solid rgba(26,166,246,.2);
+  color:var(--primary-light);font-size:10px;font-weight:600;
+  letter-spacing:1.5px;text-transform:uppercase;
+  padding:3px 10px;border-radius:20px;margin-bottom:6px;
+}
+.badge::before{
+  content:'';width:5px;height:5px;background:var(--primary);border-radius:50%;
+  animation:pulse 2s ease-in-out infinite;
+}
+
+/* h1 = tên chính — quan trọng nhất cho SEO */
+h1.name {
+  font-family:var(--font);font-weight:800;
+  font-size:clamp(20px,5.5vw,26px);
+  color:var(--text);letter-spacing:-.6px;line-height:1.1;
   margin-bottom:4px;
-  letter-spacing:.025em;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
-.dot{width:6px;height:6px;border-radius:50%;background:var(--gr);animation:pulse 2s infinite}
+h1.name span{color:var(--primary)}
 
-.hdr-meta{
-  font-size:.77rem;
-  color:var(--mu);
-  margin-top:4px;
-  line-height:1.5;
-  font-weight:500;
+.title{
+  font-size:clamp(11px,2.8vw,13px);
+  color:var(--muted);font-weight:400;
+  letter-spacing:.2px;line-height:1.4;
 }
 
-/* Divider */
-hr.div{
-  border:none;
-  height:1px;
-  background:linear-gradient(90deg,transparent,var(--bd) 25%,var(--bd) 75%,transparent);
-  margin-bottom:18px;
+/* ── Divider ── */
+.divider{
+  width:100%;height:1px;
+  background:linear-gradient(90deg,transparent,var(--border) 30%,var(--border) 70%,transparent);
+  margin:clamp(16px,4vw,24px) 0;
 }
 
-/* CTA */
-.call{
-  display:flex;align-items:center;justify-content:center;gap:10px;
-  width:100%;
-  padding:clamp(13px,3vw,15px) 20px;
-  border-radius:var(--r);
-  background:linear-gradient(135deg,var(--ac),var(--ac2));
-  color:#fff;
-  font-family:var(--f);
-  font-size:clamp(.9rem,3vw,1rem);
-  font-weight:700;
-  letter-spacing:.025em;
-  text-decoration:none;
-  border:none;cursor:pointer;
-  box-shadow:0 4px 20px var(--ac-glow),inset 0 1px 0 rgba(255,255,255,.2);
-  transition:transform var(--t),box-shadow var(--t);
-  margin-bottom:10px;
-  position:relative;overflow:hidden;will-change:transform;
+/* ── Info Grid ── */
+.info-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:10px;margin-bottom:clamp(16px,4vw,24px);
 }
-.call::after{content:'';position:absolute;top:0;left:-100%;width:55%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent);animation:shim 3.5s 1.8s infinite}
-.call:is(:hover,:focus-visible){transform:translateY(-2px);box-shadow:0 10px 32px rgba(61,184,245,.4),inset 0 1px 0 rgba(255,255,255,.2)}
-.call:active{transform:none}
-.call:focus-visible{outline:3px solid var(--ac);outline-offset:3px}
-.call svg{flex-shrink:0;animation:ring 5s 2s infinite}
 
-/* SECONDARY */
-.sec{
-  display:flex;align-items:center;justify-content:center;gap:10px;
-  width:100%;
-  padding:clamp(11px,2.5vw,14px) 20px;
-  border-radius:var(--r);
-  background:#fff;
-  border:1.5px solid var(--bd);
-  color:var(--tx);
-  font-family:var(--f);
-  font-size:clamp(.85rem,2.5vw,.95rem);
-  font-weight:500;
-  text-decoration:none;cursor:pointer;
-  transition:transform var(--t),background var(--t),border-color var(--t),box-shadow var(--t);
-  margin-bottom:10px;
+.info-item{
+  background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.04);
+  border-radius:12px;
+  padding:clamp(10px,3vw,14px) clamp(12px,3vw,16px);
+  transition:background .2s,border-color .2s;min-width:0;
 }
-.sec:is(:hover,:focus-visible){transform:translateY(-2px);background:var(--sf2);border-color:var(--bdh);box-shadow:var(--shadow-md)}
-.sec:focus-visible{outline:3px solid var(--ac);outline-offset:3px}
-.sec svg{color:var(--ac);flex-shrink:0}
-.sec.email{animation:fadeUp .42s .12s cubic-bezier(.22,1,.36,1) both}
-.sec.pay{animation:fadeUp .42s .16s cubic-bezier(.22,1,.36,1) both}
+.info-item:hover{background:rgba(26,166,246,.05);border-color:rgba(26,166,246,.15)}
 
-/* NAV */
-.nav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px;animation:fadeUp .42s .15s cubic-bezier(.22,1,.36,1) both}
-.card{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
-  padding:clamp(14px,4vw,22px) 12px;
-  border-radius:var(--r);
-  background:#fff;
-  border:1.5px solid var(--bd);
-  text-decoration:none;color:var(--tx);font-weight:600;
-  font-size:clamp(.83rem,2.5vw,.92rem);
-  transition:transform var(--t),background var(--t),border-color var(--t),box-shadow var(--t);
+.info-label{
+  font-size:10px;letter-spacing:1.2px;text-transform:uppercase;
+  color:var(--primary);font-weight:600;margin-bottom:3px;opacity:.8;
 }
-.card:is(:hover,:focus-visible){transform:translateY(-3px);background:var(--sf2);border-color:var(--bdh);box-shadow:var(--shadow-md)}
-.card:focus-visible{outline:3px solid var(--ac);outline-offset:3px}
-.card .ic{font-size:clamp(1.4rem,5vw,1.8rem);line-height:1}
-
-/* SOCIAL */
-.social{animation:fadeUp .42s .2s cubic-bezier(.22,1,.36,1) both;content-visibility:auto;contain-intrinsic-size:0 120px}
-
-.stitle{
-  font-size:.64rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--mu);margin-bottom:12px;
-  display:flex;align-items:center;gap:8px;
+.info-value{
+  font-size:clamp(11px,3vw,12.5px);color:var(--text);font-weight:400;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
-.stitle::after{content:'';flex:1;height:1px;background:var(--bd)}
 
-.sgrid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(clamp(42px,12vw,50px),1fr));
-  gap:8px;
-  padding:6px;
-  margin:-6px;
-  opacity:0;
-  transition:opacity .35s;
+/* ── Social ── */
+.social-label{
+  font-size:10px;letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--muted);font-weight:600;margin-bottom:12px;opacity:.55;
 }
-.sgrid.loaded{opacity:1}
+.social-grid{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(20px,5vw,28px)}
 
-.sbtn{
-  display:grid;
-  place-items:center;
-  aspect-ratio:1;
-  border-radius:var(--rs);
-  background:transparent;
-  border:none;
-  text-decoration:none;
-  transition:transform .18s;
+.social-btn {
+  display:flex;align-items:center;gap:7px;
+  padding:clamp(8px,2.5vw,10px) clamp(12px,3vw,15px);
+  border-radius:50px;
+  font-size:clamp(11px,2.8vw,12px);font-weight:500;
+  color:var(--text);
+  background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);
+  transition:transform .22s cubic-bezier(.34,1.56,.64,1),
+             border-color .22s,box-shadow .22s,color .15s;
+  position:relative;overflow:hidden;
+  min-height:38px;touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
 }
-.sbtn:is(:hover,:focus-visible){transform:scale(1.1) translateY(-2px)}
-.sbtn:focus-visible{outline:3px solid var(--ac);outline-offset:3px}
-.sbtn svg{width:22px;height:22px;display:block}
+.social-btn::before{
+  content:'';position:absolute;inset:0;
+  background:var(--btn-color,var(--primary));
+  opacity:0;transition:opacity .22s;border-radius:inherit;
+}
+.social-btn:hover,.social-btn:focus-visible{
+  transform:translateY(-2px) scale(1.04);
+  border-color:var(--btn-color,var(--primary));
+  box-shadow:0 6px 18px rgba(0,0,0,.3),0 0 0 1px var(--btn-color,var(--primary));
+  color:#fff;outline:none;
+}
+.social-btn:hover::before{opacity:.15}
+.social-btn svg{width:15px;height:15px;flex-shrink:0;position:relative;z-index:1;transition:transform .22s}
+.social-btn:hover svg{transform:scale(1.1)}
+.social-btn span{position:relative;z-index:1}
 
+.social-btn.strava  {--btn-color:#fc4c02;border-color:rgba(252,76,2,.2)}
+.social-btn.facebook{--btn-color:#1877f2}
+.social-btn.telegram{--btn-color:#26a5e4}
+.social-btn.whatsapp{--btn-color:#25d366}
+.social-btn.zalo    {--btn-color:#0068ff}
+.social-btn.tiktok  {--btn-color:#ff0050}
+.social-btn.youtube {--btn-color:#ff0000}
+.social-btn.wechat     {--btn-color:#07c160;border-color:rgba(7,193,96,.2)}
+.social-btn.x-twitter {--btn-color:#ffffff;border-color:rgba(255,255,255,.15)}
+.social-btn.instagram  {--btn-color:#e1306c;border-color:rgba(225,48,108,.2)}
 
+/* ── CTA ── */
+.cta-row{display:grid;grid-template-columns:1fr auto;gap:10px}
 
+.btn-contact {
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:clamp(12px,3.5vw,14px) clamp(16px,4vw,24px);
+  background:var(--primary);color:#fff;border-radius:14px;
+  font-family:var(--font);font-weight:700;
+  font-size:clamp(12px,3vw,13.5px);letter-spacing:.2px;
+  transition:background .2s,transform .2s,box-shadow .2s;
+  box-shadow:0 8px 24px rgba(26,166,246,.35);
+  min-height:46px;white-space:nowrap;
+  touch-action:manipulation;-webkit-tap-highlight-color:transparent;
+}
+.btn-contact:hover{
+  background:var(--primary-light);transform:translateY(-2px);
+  box-shadow:0 12px 32px rgba(26,166,246,.45);
+}
 
-/* FOOTER */
-.ftr{text-align:center;margin-top:26px;padding-top:16px;border-top:1px solid var(--bd);animation:fadeUp .42s .25s cubic-bezier(.22,1,.36,1) both}
-.ftr p{font-size:.68rem;color:var(--mu);letter-spacing:.04em}
-.ftr span{color:var(--ac2);font-weight:600}
+.btn-share {
+  display:flex;align-items:center;justify-content:center;
+  width:46px;min-height:46px;flex-shrink:0;
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  border-radius:14px;color:var(--muted);
+  transition:background .2s,border-color .2s,color .2s,transform .2s;
+  touch-action:manipulation;-webkit-tap-highlight-color:transparent;
+}
+.btn-share:hover{
+  background:rgba(26,166,246,.1);border-color:var(--primary);
+  color:var(--primary);transform:translateY(-2px);
+}
+.btn-share svg{width:18px;height:18px}
 
-/* Keyframes */
-@keyframes fadeUp{from{opacity:0;translate:0 20px}to{opacity:1;translate:0 0}}
-@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(22,192,122,.4)}50%{opacity:.8;box-shadow:0 0 0 4px rgba(22,192,122,0)}}
-@keyframes ring{0%,50%,100%{rotate:0}5%{rotate:-18deg}10%{rotate:18deg}15%{rotate:-10deg}20%{rotate:8deg}25%{rotate:0}}
-@keyframes shim{0%{left:-100%}100%{left:210%}}
+.footer-tag{
+  text-align:center;margin-top:clamp(16px,4vw,24px);
+  font-size:10px;color:rgba(123,168,196,.3);
+  letter-spacing:2px;text-transform:uppercase;
+}
 
-@media print{
-  body{background:#fff!important}
-  .call{background:var(--ac)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .social,.ftr{display:none}
+/* ═══════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════ */
+@media(max-width:480px){
+  .social-btn span{display:none}
+  .social-btn{padding:10px 12px;border-radius:12px;min-height:42px}
+  .social-btn svg{width:18px;height:18px}
+}
+@media(max-width:360px){
+  .avatar-wrap{flex-direction:column;align-items:flex-start;gap:14px}
+  .info-grid{grid-template-columns:1fr}
+  .cta-row{grid-template-columns:1fr}
+  .btn-share{width:100%;height:44px}
+}
+@media(max-height:500px) and (orientation:landscape){
+  body{align-items:flex-start;padding:12px}
+  .card{padding:16px 20px}
+  .avatar-wrap{margin-bottom:12px}
+  .divider{margin:10px 0}
+  .social-grid{margin-bottom:14px}
+}
+@media(min-width:600px){.card{max-width:500px}}
+
+/* Accessibility: giảm animation khi người dùng yêu cầu */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
 </style>
 </head>
-<body>
-<a class="skip" href="#main">Chuyển đến nội dung chính</a>
-<main class="wrap" id="main" role="main">
-<!-- HEADER — LCP candidate -->
-<header class="hdr">
-<div class="avatar" role="img" aria-label="Ảnh đại diện Chanh" style="width:72px;height:72px">😊</div>
-<div class="hdr-info">
 
-<!--   
-<div class="badge" aria-label="Đang hoạt động">
-<span class="dot" aria-hidden="true"></span>Đang hoạt động
-</div>
---> 
+<body itemscope itemtype="https://schema.org/Person">
+<main>
+<article class="card" role="main" aria-label="Chanh">
+  <div class="corner-mark" aria-hidden="true"></div>
+  <div class="corner-mark-bl" aria-hidden="true"></div>
 
-<h1><a class="name-lnk" href="https://chanh.me" rel="noopener noreferrer" title="Chanh.me">Chanh</a></h1>
-<p class="hdr-meta">chanhdotme · Chanh.me</p>
-</div>
-</header>
-<hr class="div" role="separator" aria-hidden="true">
+  <header class="avatar-wrap">
+    <div class="avatar-ring" aria-hidden="true">
+      <div class="avatar" itemprop="image"><img src="data:image/webp;base64,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" alt="Chanh" width="90" height="90" fetchpriority="high" decoding="async"></div>
+      <div class="status-dot" aria-label="Đang hoạt động"></div>
+    </div>
+    <div class="header-text">
+      <!--<div class="badge" aria-label="Trạng thái: Available">Online</div>-->
+      <h1 class="name" itemprop="name">Chanh <span itemprop="givenName"></span></h1>
+       <!--   <h1 class="name" itemprop="name">Chanh <span itemprop="givenName">Chanh</span></h1> 
 
+      <!--  <p class="title" itemprop="jobTitle">Freelancer</p>--> 
+    </div>
+  </header>
 
-<!-- GỌI ĐIỆN -->
+  <div class="divider" role="separator" aria-hidden="true"></div>
 
-<!--
-<a class="call" href="tel:+84912345678" aria-label="Gọi điện cho Chanh: 0912 xxx xxx">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true" focusable="false">
-<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9 2 2 0 0 1 3.6 2.72h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.4a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 18v1a1 1 0 0 0 .27-.08z"/>
-</svg>
-Gọi ngay: 0912 xxx xxx
-</a>
--->
+  <section class="info-grid" aria-label="Thông tin liên hệ">
+    <div class="info-item">
+      <div class="info-label">Email</div>
+      <div class="info-value">
+        <a href="mailto:hello@chanh.me" itemprop="email" style="color:inherit">hello@chanh.me</a>
+      </div>
+    </div>
+    <div class="info-item">
+      <div class="info-label">Điện thoại</div>
+      <div class="info-value">
+        <a href="tel:+84909xxxx56" itemprop="telephone" style="color:inherit">+84 909 xxx x56</a>
+      </div>
+    </div>
+  </section>
 
-<!-- EMAIL -->
-<a class="sec email" href="/cdn-cgi/l/email-protection#036b666f6f6c43606b626d6b2d6e66" aria-label="Gửi email đến hello@chanh.me">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" focusable="false">
-<rect x="2" y="4" width="20" height="16" rx="2"/>
-<path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-</svg>
+  <nav aria-label="Mạng xã hội">
+    <div class="social-label">Kết nối với tôi</div>
+    <div class="social-grid">
 
-<!--<span class="__cf_email__" data-cfemail="224a474e4e4d62414a434c4a0c4f47">[email&#160;protected]</span>-->
+      <a href="https://facebook.com/chanhdotme" target="_blank" rel="noopener noreferrer me"
+         class="social-btn facebook" aria-label="Facebook của Chanh" itemprop="sameAs">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        <span>Facebook</span>
+      </a>
 
-<span class="__cf_email__" data-cfemail="224a474e4e4d62414a434c4a0c4f47"><span class="__cf_email__" data-cfemail="94f7fcf5fafcf0fbe0f9f1d4f3f9f5fdf8baf7fbf9">[email&#160;protected]</span></span>
+      <a href="https://t.me/chanhdotme" target="_blank" rel="noopener noreferrer me"
+         class="social-btn telegram" aria-label="Telegram của Chanh" itemprop="sameAs">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        <span>Telegram</span>
+      </a>
 
-</a>
+      <a href="https://wa.me/chanhdotme" target="_blank" rel="noopener noreferrer me"
+         class="social-btn whatsapp" aria-label="WhatsApp của Chanh" itemprop="sameAs">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        <span>WhatsApp</span>
+      </a>
 
+      <a href="https://zalo.me/chanhdotme" target="_blank" rel="noopener noreferrer me"
+         class="social-btn zalo" aria-label="Zalo của Chanh" itemprop="sameAs">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 4.924c-.07.175-.214.308-.392.371-.179.063-.375.048-.541-.041l-1.59-.861-.96.96c-.14.14-.332.21-.527.195-.196-.016-.374-.116-.49-.274l-.634-.856v1.296c0 .276-.224.5-.5.5s-.5-.224-.5-.5V9.186c0-.233.16-.436.388-.49.228-.053.462.048.576.25l1.127 1.981.876-.876c.14-.14.334-.207.53-.183l1.686.546 1.528-3.82c.098-.245.37-.365.617-.268.246.098.366.37.268.616l.008.006zM9.5 9.5c0-.276-.224-.5-.5-.5s-.5.224-.5.5v5c0 .276.224.5.5.5s.5-.224.5-.5v-5zm-2 0c0-.276-.224-.5-.5-.5s-.5.224-.5.5v5c0 .276.224.5.5.5s.5-.224.5-.5v-5z"/></svg>
+        <span>Zalo</span>
+      </a>
 
-<!-- THANH TOÁN -->
+      <a href="weixin://dl/chat?chanhdotme" target="_blank" rel="noopener noreferrer me"
+         class="social-btn wechat" aria-label="WeChat của Chanh" itemprop="sameAs">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c-.053-.305-.08-.617-.08-.937 0-3.85 3.818-6.972 8.526-6.972.177 0 .352.007.526.018C16.78 4.228 13.026 2.188 8.69 2.188zm-2.75 3.67a.988.988 0 1 1 0 1.976.988.988 0 0 1 0-1.975zm5.5 0a.988.988 0 1 1 0 1.976.988.988 0 0 1 0-1.975zm2.858 4.154c-4.155 0-7.526 2.846-7.526 6.357 0 3.51 3.37 6.357 7.526 6.357.963 0 1.88-.152 2.73-.428a.683.683 0 0 1 .563.077l1.498.877a.257.257 0 0 0 .131.042.232.232 0 0 0 .228-.232c0-.057-.023-.11-.038-.167l-.308-1.165a.465.465 0 0 1 .168-.524C20.652 19.845 22 18.132 22 16.17c0-3.511-3.37-6.357-7.701-6.357zm-2.749 2.42a.779.779 0 1 1 0 1.558.779.779 0 0 1 0-1.558zm5.498 0a.779.779 0 1 1 0 1.558.779.779 0 0 1 0-1.558z"/></svg>
+        <span>WeChat</span>
+      </a>
 
-<!--
-<a class="sec pay" href="#" target="_blank" rel="noopener noreferrer" aria-label="Trang thanh toán Chanh.me">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true" focusable="false">
-<rect x="1" y="4" width="22" height="16" rx="2"/>
-<line x1="1" y1="10" x2="23" y2="10"/>
-</svg>
-Thanh toán
-</a>-->
+      <a href="https://tiktok.com/@chanhdotme" target="_blank" rel="noopener noreferrer me"
+         class="social-btn tiktok" aria-label="TikTok của Chanh" itemprop="sameAs">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        <span>TikTok</span>
+      </a>
 
+      <a href="https://youtube.com/@chanhdotme" target="_blank" rel="noopener noreferrer me"
+         class="social-btn youtube" aria-label="YouTube của Chanh" itemprop="sameAs">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <span>YouTube</span>
+      </a>
 
-<!-- NAV -->
-<!--<nav class="nav" aria-label="Điều hướng chính">
-<a class="card" href="https://blog.chanh.me" aria-label="Blog – Bài viết và kiến thức">
-<span class="ic" aria-hidden="true">📝</span>
-<span>Blog</span>
-</a>
-<a class="card" href="https://shop.chanh.me" aria-label="Cửa Hàng – Sản phẩm và dịch vụ">
-<span class="ic" aria-hidden="true">🛍️</span>
-<span>Shop</span>
-</a>
-</nav>-->
+      <a href="https://www.strava.com/athletes/chanhdotme" target="_blank" rel="noopener noreferrer me"
+         class="social-btn strava" aria-label="Strava của Chanh" itemprop="sameAs">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg>
+        <span>Strava</span>
+      </a>
 
+      <a href="https://x.com/chanhdotme" target="_blank" rel="noopener noreferrer me"
+         class="social-btn x-twitter" aria-label="X của Chanh" itemprop="sameAs">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.261 5.638 5.903-5.638zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <span>X</span>
+      </a>
 
-<!-- SOCIAL — icons rendered after page load to avoid blocking LCP -->
-<section class="social" aria-label="Mạng xã hội và kênh liên lạc">
-<p class="stitle" id="sh">Kết nối</p>
-<noscript><style>.sgrid{opacity:1}</style></noscript>
-<div class="sgrid" role="list" aria-labelledby="sh" id="sgrid">
-<a class="sbtn" role="listitem" href="https://facebook.com/chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="Facebook">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#1877F2" d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.97h-1.514c-1.491 0-1.956.93-1.956 1.886v2.254h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://t.me/chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="Telegram">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#26A5E4" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.48 14.019l-2.95-.924c-.642-.204-.657-.643.136-.953l11.52-4.44c.535-.194 1.003.13.376.546z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://wa.me/84912345678" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://zalo.me/84912345678" target="_blank" rel="noopener noreferrer" aria-label="Zalo">
-<svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false"><rect width="48" height="48" rx="10" fill="#0068FF"/><text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="17" fill="white">Zalo</text></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://tiktok.com/@chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="TikTok">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#000000" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://youtube.com/@chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="YouTube">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://strava.com/athletes/chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="Strava">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#FC4C02" d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg>
-</a>
-<!--
-<a class="sbtn" role="listitem" href="https://x.com/chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="X (Twitter)">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#e8edf6" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://instagram.com/chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="Instagram">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><defs><linearGradient id="ig" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#FED373"/><stop offset="25%" stop-color="#F15245"/><stop offset="50%" stop-color="#D92E7F"/><stop offset="75%" stop-color="#9B36B7"/><stop offset="100%" stop-color="#515ECF"/></linearGradient></defs><path fill="url(#ig)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://linkedin.com/in/chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="LinkedIn">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://bsky.app/profile/chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="Bluesky">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#0085FF" d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.204-.659-.298-1.664-.62-4.3 1.24C16.046 4.747 13.087 8.686 12 10.8z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://mastodon.social/@chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="Mastodon">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#6364FF" d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://pinterest.com/chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="Pinterest">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#E60023" d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://threads.net/@chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="Threads">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#000000" d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.851 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.378-.888h-.015c-.845 0-1.981.208-2.721 1.32l-1.733-1.146c.939-1.417 2.464-2.187 4.454-2.187h.02c3.164.016 5.096 1.977 5.23 5.387.408.28.78.596 1.102.947 1.056 1.166 1.58 2.699 1.496 4.434-.078 1.65-.628 3.09-1.664 4.295-1.423 1.658-3.518 2.525-6.058 2.543z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://github.com/chanhdotme" target="_blank" rel="noopener noreferrer me" aria-label="GitHub">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#24292f" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://wechat.com" target="_blank" rel="noopener noreferrer" aria-label="WeChat">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#07C160" d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178A1.17 1.17 0 0 1 4.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 0 1-1.162 1.178 1.17 1.17 0 0 1-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.229 6.884 4.229.826 0 1.622-.12 2.361-.336a.722.722 0 0 1 .598.082l1.584.926a.272.272 0 0 0 .14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 0 1-.023-.156.49.49 0 0 1 .201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-7.063-6.122zm-3.718 3.19c.533 0 .963.44.963.982a.963.963 0 0 1-.963.982.963.963 0 0 1-.963-.982c0-.542.43-.982.963-.982zm4.586 0c.533 0 .963.44.963.982a.963.963 0 0 1-.963.982.963.963 0 0 1-.963-.982c0-.542.43-.982.963-.982z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://paypal.me/chanhdotme" target="_blank" rel="noopener noreferrer" aria-label="PayPal">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#009CDE" d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106z"/><path fill="#003087" d="M21.222 6.918a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"/></svg>
-</a>
-<a class="sbtn" role="listitem" href="https://payoneer.com" target="_blank" rel="noopener noreferrer" aria-label="Payoneer">
-<svg viewBox="0 0 48 48" width="22" height="22" aria-hidden="true" focusable="false"><rect width="48" height="48" rx="10" fill="#FF4800"/><text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900" font-size="10" fill="white">PAY</text></svg>
-</a>
-<a class="sbtn" role="listitem" href="viber://chat?number=%2B84912345678" target="_blank" rel="noopener noreferrer" aria-label="Viber">
-<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="#7360F2" d="M11.997 0C5.506 0 .236 5.27.236 11.76c0 3.244 1.318 6.18 3.45 8.31L2.5 23.416a.5.5 0 0 0 .63.63l3.59-1.18a11.54 11.54 0 0 0 5.277 1.27c6.491 0 11.761-5.27 11.761-11.76S18.488 0 11.997 0zm5.87 16.77c-.28.78-1.63 1.49-2.27 1.56-.58.06-1.3.09-4.21-1.42-3.54-1.83-5.82-5.37-5.99-5.62-.18-.25-1.46-1.95-1.46-3.72s1.08-2.56 1.46-2.91c.38-.35.83-.44 1.1-.44.27 0 .54.003.77.014.25.012.58-.094.91.696.35.83 1.18 2.87 1.28 3.08.1.21.17.46.03.73-.13.27-.2.44-.39.68-.19.24-.4.53-.57.71-.19.19-.39.4-.17.78.22.39.98 1.61 2.1 2.61 1.44 1.28 2.65 1.68 3.04 1.87.39.19.62.16.85-.1.23-.26.99-1.15 1.25-1.55.26-.4.52-.33.87-.2.35.13 2.23 1.05 2.61 1.24.38.19.63.28.72.44.09.16.09.93-.19 1.71z"/></svg>
-</a>
--->
-</div>
-</section>
-<!-- FOOTER -->
-<footer class="ftr" role="contentinfo">
-<p>© 2026 <span>Chanh · chanhdotme · Chanh.me</span></p>
-</footer>
+      <a href="https://instagram.com/chanhdotme" target="_blank" rel="noopener noreferrer me"
+         class="social-btn instagram" aria-label="Instagram của Chanh" itemprop="sameAs">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        <span>Instagram</span>
+      </a>
+
+    </div>
+  </nav>
+
+  <div class="cta-row">
+    <a href="mailto:hello@vanan.dev" class="btn-contact" itemprop="email">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+      </svg>
+      Liên hệ ngay
+    </a>
+    <button class="btn-share"
+      aria-label="Chia sẻ namecard này"
+      onclick="if(navigator.share){navigator.share({title:'Chanh',text:'@chanhdotme',url:window.location.href})}else{navigator.clipboard.writeText(window.location.href);alert('Đã sao chép link!')}">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+      </svg>
+    </button>
+  </div>
+
+  <footer>
+    <p class="footer-tag" itemprop="url">chanh.me · 2026</p>
+  </footer>
+</article>
 </main>
-<!-- Schema.org JSON-LD -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Chanh","alternateName":"chanhdotme","url":"https://chanh.me","email":"hello@chanh.me","telephone":"+84912345678","jobTitle":"Blogger & Bán hàng online","description":"Blogger chia sẻ kiến thức và bán hàng online tại TP. Hồ Chí Minh, Việt Nam.","image":"https://chanh.me/og-image.jpg","address":{"@type":"PostalAddress","addressLocality":"TP. Hồ Chí Minh","addressCountry":"VN"},"sameAs":["https://facebook.com/chanhdotme","https://instagram.com/chanhdotme","https://t.me/chanhdotme","https://youtube.com/@chanhdotme","https://x.com/chanhdotme","https://tiktok.com/@chanhdotme","https://linkedin.com/in/chanhdotme","https://github.com/chanhdotme","https://bsky.app/profile/chanhdotme"]}</script>
-<!-- Reveal social grid after page paint -->
-<script>
-requestAnimationFrame(()=>requestAnimationFrame(()=>{
-  const g=document.getElementById('sgrid');
-  if(g)g.classList.add('loaded');
-}));
-</script>
 </body>
 </html>
